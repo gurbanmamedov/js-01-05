@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Show</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fefefe;
+
+      }
+
+      #slideshow {
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: absolute;
+      }
+
+      .active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow">
+      <div class="slide active ">
+        <img src="./78d6dd3d-626e-4b3f-a802-ad0cf2c521c7.jfif" alt="Slide 1" />
+      </div>
+      <div class="slide">
+        <img src="./e52c1a5f43aa94440e91a33d7872faf9.jpg" alt="Slide 2" />
+      </div>
+      <div class="slide">
+        <img
+          src="./feelsbadman-pepe-meme-memes-wallpaper-preview.jpg"
+          alt="Slide 3"
+        />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
